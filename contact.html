@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christy Bencomo">
+    <title>Swiss Wonderland Lodge | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/favicon2" href="images/favicon2.jpg">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Swiss Wonderland Lodge</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Feel free to reach out to us for any inquiries or bookings.</p>
+                <img src="images/swiss-peak.jpg" alt="Swiss Peak">
+            </div>
+            <div class="contact-form">
+                <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="queryType">Query Type</label>
+                        <select id="queryType" name="queryType">
+                            <option value="general">General Inquiry</option>
+                            <option value="booking">Booking</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <fieldset class="form-group">
+                        <legend>Preferred Contact Method</legend>
+                        <div class="contact-method">
+                            <input type="radio" id="contactMethodEmail" name="contactMethod" value="email" checked>
+                            <label for="contactMethodEmail">Email</label>
+                            <input type="radio" id="contactMethodPhone" name="contactMethod" value="phone">
+                            <label for="contactMethodPhone">Phone</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright ©2023 - Swiss Wonderland Lodge</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
+</html>
